@@ -1,0 +1,10 @@
+id  : Belong2ParentCategories
+key : belong2parentcategories
+name: Belong to Parent Categories
+version: 0.1
+author_name: Alfasado Inc.
+author_link: http://alfasado.net/
+l10n_class: Belong2ParentCategories::L10N
+description: <__trans phrase="The entry belongs to the all parent categories.">
+callbacks:
+    cms_post_save.entry: $belong2parentcategories::Belong2ParentCategories::Plugin::_post_save_entry
